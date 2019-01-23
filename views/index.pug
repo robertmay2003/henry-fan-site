@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  script(src='javascripts/index.js')
+
+  h1#title= title
+
+  - var img = "images/henry-pictures/" + henryImage
+  img#henry.inline(src=img)
+  br
+
+  div.holder
+    p Welcome to the official fan page for Henry!
+    p This is a private site. Please enter the password to view the page.
+    br
+    p#recaptchaDone
+    if incorrectPassword
+      p#failed Incorrect password. Please try again.
+    form#form(action="/password-verification" method="GET")
+      input#password(type="password" name="pass" placeholder="")
+      br
+      input(type='button' value='Submit' onclick='validateForm()')
+    img#recaptcha(src='images/recaptcha_unclicked.jpg' onclick='recaptchaVerify()')

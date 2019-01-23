@@ -1,0 +1,62 @@
+body {
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  background-color: rgba(0, 179, 139, 0.12);
+}
+
+a {
+  color: #00B7FF;
+}
+
+p {
+  text-align: center;
+}
+
+#title {
+  margin-top: 0px;
+  color: #00b08c;
+  font-size: 68px;
+}
+
+#recaptchaDone {
+  color: red;
+}
+
+#failed {
+  color: red;
+}
+
+#recaptcha {
+  margin-top: 10px;
+  width: 300px;
+}
+
+#password {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+#checking {
+  font-size: 38px;
+  color: gray;
+}
+
+#henry {
+  height: 500px;
+  border-radius: 20px;
+}
+
+div.holder {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  display: inline-block;
+}
+
+img.inline {
+  display: inline-block;
+}
+
